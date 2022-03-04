@@ -31,8 +31,8 @@ public class Robot extends TimedRobot {
     //creates hardware object attached to names created above
     leftFrontMotor = new CANSparkMax(1, MotorType.kBrushless); //creates a CAN speed controller for leftFrontMotor w/CAN ID #1 set for brushless mode
     leftRearMotor = new CANSparkMax(2, MotorType.kBrushless);
-    rightFrontMotor = new CANSparkMax(3, MotorType.kBrushless);
-    rightRearMotor = new CANSparkMax(4, MotorType.kBrushless);
+    rightFrontMotor = new CANSparkMax(4, MotorType.kBrushless);
+    rightRearMotor = new CANSparkMax(3, MotorType.kBrushless);
     leftMotors = new MotorControllerGroup(leftFrontMotor, leftRearMotor); //groups left motors together as a slingle object called left motors
     rightMotors = new MotorControllerGroup(rightFrontMotor, rightRearMotor);
     myRobot = new DifferentialDrive(leftMotors, rightMotors);
